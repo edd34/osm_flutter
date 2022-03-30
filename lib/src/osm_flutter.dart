@@ -2,7 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_osm_interface/flutter_osm_interface.dart';
 
-import 'controller/map_controller.dart';
 import 'interface_osm/base_osm_platform.dart';
 import 'widgets/copyright_osm_widget.dart';
 
@@ -171,16 +170,19 @@ class OSMFlutterState extends State<OSMFlutter> {
                               controller: widget.controller,
                               onGeoPointClicked: widget.onGeoPointClicked,
                               onLocationChanged: widget.onLocationChanged,
-                              dynamicMarkerWidgetNotifier: dynamicMarkerWidgetNotifier,
+                              dynamicMarkerWidgetNotifier:
+                                  dynamicMarkerWidgetNotifier,
                               mapIsLoading: widget.mapIsLoading,
                               trackMyPosition: widget.trackMyPosition,
                               mapIsReadyListener: mapIsReadyListener,
                               staticIconGlobalKeys: staticMarkersKeys,
                               roadConfiguration: widget.roadConfiguration,
-                              showContributorBadgeForOSM: widget.showContributorBadgeForOSM,
+                              showContributorBadgeForOSM:
+                                  widget.showContributorBadgeForOSM,
                               isPicker: widget.isPicker,
                               markerOption: widget.markerOption,
-                              showDefaultInfoWindow: widget.showDefaultInfoWindow,
+                              showDefaultInfoWindow:
+                                  widget.showDefaultInfoWindow,
                               showZoomController: widget.showZoomController,
                               staticPoints: widget.staticPoints,
                               globalKeys: [
@@ -199,7 +201,8 @@ class OSMFlutterState extends State<OSMFlutter> {
                               maxZoomLevel: widget.maxZoomLevel,
                               userLocationMarker: widget.userLocationMarker,
                               onMapIsReady: widget.onMapIsReady,
-                              androidHotReloadSupport: widget.androidHotReloadSupport),
+                              androidHotReloadSupport:
+                                  widget.androidHotReloadSupport),
                         ),
                         Positioned.fill(
                           child: ValueListenableBuilder<bool>(
@@ -229,7 +232,8 @@ class OSMFlutterState extends State<OSMFlutter> {
                       staticIconGlobalKeys: staticMarkersKeys,
                       roadConfiguration: widget.roadConfiguration,
                       androidHotReloadSupport: widget.androidHotReloadSupport,
-                      showContributorBadgeForOSM: widget.showContributorBadgeForOSM,
+                      showContributorBadgeForOSM:
+                          widget.showContributorBadgeForOSM,
                       isPicker: widget.isPicker,
                       markerOption: widget.markerOption,
                       showDefaultInfoWindow: widget.showDefaultInfoWindow,
